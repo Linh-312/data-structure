@@ -73,12 +73,12 @@ def dictionary():
 #================================================================
 # tệp
 def save_dict(dic):
-    f = io.open('D:\Code\Python\Creat\data\dict.txt',mode = 'w',encoding='utf-8')
+    f = io.open('/home/rin/Documents/Code/Creat/data/dict.txt',mode = 'w',encoding='utf-8')
     f.write(str(dic))
     f.close()
 #===============================================================
 def load_dict():
-    f = io.open('D:\Code\Python\Creat\data\dict.txt',mode = 'r',encoding='utf-8')
+    f = io.open('/home/rin/Documents/Code/Creat/data/dict.txt',mode = 'r',encoding='utf-8')
     data=f.read()
     f.close()
     return eval(data)
@@ -106,7 +106,7 @@ def shut_down():
         i+=1
     print('Please wait a few minutes!')
     Speak.speak('Please wait a few minutes')
-    os.system('shutdown -s')
+    os.system('sudo shutdown now')
 #==========================================================
 def onetwothree():
     os.system('D:\Code\Python\Minitest\gkbb.py')

@@ -1,1 +1,1 @@
-{'dictionary': 'từ điển', 'monkey': 'con khỉ', 'cat': 'con mèo', 'fish': 'con cá'}
+{'dictionary': 'từ điển', 'monkey': 'con khỉ', 'cat': 'con mèo', 'fish': 'con cá', 'annual': 'hằng năm ', 'book': 'sách '}
