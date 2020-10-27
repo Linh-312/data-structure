@@ -38,14 +38,27 @@ public class Main {
             node=node.next;
         }
     }
-
+    //thêm cuối danh sách
+    public static SinglyLinkedListNode inserttail(SinglyLinkedListNode head, int data){
+        SinglyLinkedListNode node = head;
+        SinglyLinkedListNode nodeData = new SinglyLinkedListNode(data);
+        if(node==null){
+            node = nodeData;
+        }
+        else {
+            node = node.next;
+            node = nodeData;
+        }
+        return node;
+    }
     public static void main(String[] args) {
 	// write your code here
         SinglyLinkedList list = new SinglyLinkedList();
         Scanner scanner = new Scanner(System.in);
         int n = scanner.nextInt();
         for (int i= 0;i<n;i++){
-            list.insertNode(scanner.nextInt());
+//            list.insertNode(scanner.nextInt());
+            System.out.println(inserttail(list.head,scanner.nextInt()));
         }
         print(list.head);
     }
